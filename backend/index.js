@@ -212,7 +212,9 @@ app.post('/newOrder', async(req,res)=>{
     res.send("order saved");
 });
 
-
+app.get('/',(req,res)=>{
+    res.send("root is working");
+})
 
 app.listen(PORT, () => {
     console.log("App started!");
